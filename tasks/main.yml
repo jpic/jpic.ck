@@ -1,0 +1,5 @@
+---
+
+- pacman: name=linux-ck-{{ march }},linux-ck-{{ march }}-headers
+  notify: update grub
+  sudo: yes

@@ -1,0 +1,18 @@
+---
+galaxy_info:
+  author: James Pic
+  description: Installs Linux with Con Kolivas patches
+  license: BSD
+  min_ansible_version: 1.2
+
+  platforms:
+  - name: GenericLinux
+    versions:
+    - all
+    - any
+  
+  categories:
+  - system
+
+dependencies:
+- jpic.march
