@@ -3,13 +3,12 @@
 - hosts: all
 
   roles:
-  - role: jpic.archlinux
-    archlinux_mirrors:
+  - role: jpic.pacman
+    pacman_mirrors:
     - http://arch.yourlabs.org/
-    archlinux_repositories:
+    pacman_repositories:
     - name: repo-ck
-      url: http://ck.yourlabs.org/$arch
-    archlinux_keys:
-    - 5EE46C4C
+      url: http://repo-ck.com/$arch
+  - jpic.gpg
   - jpic.march
   - .
